@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
 
@@ -57,16 +58,29 @@
   <main class="container">
     <section class="row">
       <div class="col-md-8">
-        <article class="block">
-          <h1 class="block-header">About Me</h1>
+        <form class="block form-horizontal">
+          <h1 class="block-header">Contact</h1>
           <hr />
-          <img src="assets/images/me.png" alt="D.J. Gilmore Turner" id="about-image" />
-          <p>I am a telecommunications implementation and support engineer, with experience managing global teams and multifaceted projects. My background in telecommunications engineering, account management, and project management inform my mindful but competitive approach.</p>
-          <br />
-          <p>I am fueled by my passion for understanding the nuances of todays IT landscape and growing penchant for Full Stack development. I consider myself a ‘forever student’, eager to both build on my academic foundations in IT and code development, and stay in tune with the most in-demand technologies saturating the market today.
-          </p>
-          <p>I have been in telecommunications for roughly 13 years and I am very excited to expand my knowledgebase and grow my career in new directions. Having the background that I do has given me rare insight into the full operational needs required for a successful and well managed business. I work well both individually as well as in a team environment. My ability to adapt to any situation and find areas that I can provide a useful service has served my previous employers very well over the years.</p>
-        </article>
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="msg">Message</label>
+            <div class="col-sm-10">
+              <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <button class="submit-btn">Submit</button>
+        </form>
       </div>
       <div class="col-md-4">
         <aside class="block">
@@ -98,6 +112,7 @@
   <!-- Bootstrap CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
