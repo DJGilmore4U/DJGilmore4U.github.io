@@ -70,12 +70,17 @@ main {
 .connect-header {
   /* Typography */
   font-size: 25px;
+  text-align: center;
 }
 
 .connect-photo {
   /* Box-model */
   width: 55px;
   height: 55px;
+}
+
+.DJG {
+  margin-left: 60px;
 }
 
 #images {

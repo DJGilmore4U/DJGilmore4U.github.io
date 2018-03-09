@@ -63,23 +63,23 @@
           <h1 class="block-header">Portfolio</h1>
           <hr />
           <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <a href="https://djgilmore4u.github.io/TriviaGame/"><img class="img-responsive port-image" src="assets/images/Trivia.JPG" alt="Trivia Game"></a>
+            <div class="col-sm-6 col-md-12 col-lg-6 matchheight">
+              <a href="https://djgilmore4u.github.io/TriviaGame/"><img class="img-responsive port-image" src="assets/images/Trivia.png" alt="Trivia Game"></a>
             </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="col-sm-6 col-md-12 col-lg-6 matchheight">
               <a href="https://djgilmore4u.github.io/week-4-game/"><img class="img-responsive port-image" src="assets/images/crystals.JPG" alt="Crystals Game"></a>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="col-sm-6 col-md-12 col-lg-6 matchheight">
               <a href="https://djgilmore4u.github.io/Hangman-Game/"><img class="img-responsive port-image" src="assets/images/hangman.JPG" alt="Hangman Game"></a>
             </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="col-sm-6 col-md-12 col-lg-6 matchheight">
               <a href="https://djgilmore4u.github.io/GiphyAPI/"><img class="img-responsive port-image" src="assets/images/GiphyApi.JPG" alt="Giphy API Search"></a>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="col-sm-6 col-md-12 col-lg-6 matchheight">
               <img class="img-responsive port-image" src="https://via.placeholder.com/350x350" alt="">
             </div>
           </div>
@@ -89,6 +89,7 @@
         <aside class="block">
           <h1 class="block-header connect-header">Connect With Me</h1>
           <hr />
+          <a href="https://DJGilmore4U.github.io" target="_blank"><img src="assets/imgs/logo.JPG" alt="" class="DJG"></a>
           <div id="images">
             <a href="https://github.com/DJGilmore4U" target="_blank"><img src="assets/imgs/github.png" alt="" class="connect-photo"></a>
             <a href="https://www.linkedin.com/in/d-j-turner-0a916221/" target="_blank"><img src="assets/imgs/linkedin.png" alt="" class="connect-photo"></a>
@@ -117,5 +118,10 @@
     crossorigin="anonymous"></script>
 
 </body>
-
+<script src="/js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript">
+jQuery(function($){
+  $('.matchheight').matchHeight();
+});
+</script>
 </html>
