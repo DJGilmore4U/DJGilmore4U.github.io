@@ -15,9 +15,6 @@ object= {};
 					for (var i = 0; i < object.length; i++) {
 					var news = object[i].title;
 					var link = object[i].url;
-					console.log(news);
-					console.log(link);
-					console.log(object);
                     }
                     
                     document.getElementById("uno").innerHTML = "<h3 id= 'dup'; class='text-center'><a href='"+object[0].url+"'>"+object[0].title+"</a></h3><h5 id= 'dup'; class='text-center;'>"+object[0].description+"</h5>";
