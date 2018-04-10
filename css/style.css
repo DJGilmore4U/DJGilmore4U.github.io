@@ -60,6 +60,8 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 1px;
 }
 
+
+
 ::-webkit-selection {
   color: #fff;
   background: #1FB57B;
@@ -316,6 +318,13 @@ h1, h2, h3, h4, h5, h6, figure {
   .row-bottom-padded-sm {
     padding-bottom: 1em;
   }
+}
+#dup {
+  color: #fff;
+  font-family: "Playfair Display", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
 }
 
 #fh5co-header {
@@ -1089,7 +1098,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: fixed;
   z-index: 1;
   top: 0;
-  width: 275px;
+  width: 295px;
   background: black;
   padding: 30px;
 }
