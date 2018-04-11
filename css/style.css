@@ -29,6 +29,13 @@ body {
   display: block;
  }
 
+ #resume {
+  border: #000;
+  border-width: 3px;
+  border-radius: 30px;
+  border-style: solid;
+ }
+
  #google_translate_element {
   margin-left: auto;
   margin-right: auto;
