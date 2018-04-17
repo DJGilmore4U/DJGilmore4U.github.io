@@ -1,5 +1,42 @@
   // Initialize Firebase
   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 
+var string=location.href
+// This avoids the page to loop...
+
+if (string=== "https://DJGilmore4U.github.io/LogInIndex.html/"){
+
+document.location.href= "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86m8ebytnwl0x3&redirect_uri=https%3A%2F%2FDJGilmore4U.github.io%2Fauth%2Flinkedin&state=987654321&scope=r_basicprofile"
+}
+console.log("HelloWorld");
+string=window.location.href
+ 
+var start=string.search("#access_token=") +14
+var end= string.search("&token_type=")
+var token = ''
+token = string.substring(start,end)
+
+if (token==='') {
+  document.location.href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86m8ebytnwl0x3&redirect_uri=https%3A%2F%2FDJGilmore4U.github.io%2Fauth%2Flinkedin&state=987654321&scope=r_basicprofile"
+ 
+ }
+ $(document).on('click','#submit', function(){
+    
+  var id=''
+  var email=$('#email').val()
   
- var queryUrl= "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=123456789&redirect_uri=https%3A%2F%2FDJGilmore4U.github.io%2Fauth%2Flinkedin&state=987654321&scope=r_basicprofile";
+  if (email==''){email='jondo@gmail.com'}
+  
+  $.ajax({
+      url: "https://api.linkedin.com/v1/people/~?format=json",
+      beforeSend: function(xhr) {
+           xhr.setRequestHeader("Authorization", "Bearer " + token)
+      }, success: function(data){
+          id=data.id
+          console.log(id + email);
+      }
+  })
+  
+  })
+
+  
