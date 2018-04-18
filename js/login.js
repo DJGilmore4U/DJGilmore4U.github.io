@@ -24,16 +24,16 @@ if (token==='') {
   
   if (email==''){email='jondo@gmail.com'}
   
-  $.ajax({
-      url: "https://api.linkedin.com/v1/people/~?format=json",
-      beforeSend: function(xhr) {
-           xhr.setRequestHeader("Authorization", "Bearer " + token)
-      }, success: function(data){
-          id=data.id
-          console.log(id + email);
-      }
+ // $.ajax({
+  //    url: "https://api.linkedin.com/v1/people/~?format=json",
+  //    beforeSend: function(xhr) {
+  //         xhr.setRequestHeader("Authorization", "Bearer " + token)
+  //    }, success: function(data){
+  //        id=data.id
+  //        console.log(id + email);
+  //    }
   })
   
-  })
+  //})
 
   
