@@ -1,10 +1,7 @@
-  // Initialize Firebase
-  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
-
 var string=location.href
 // This avoids the page to loop...
 
-if (string=== "https://DJGilmore4U.github.io/LogInIndex.html/"){
+if (string=== "https://DJGilmore4U.github.io/privy/test.html/"){
 
 document.location.href= "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86m8ebytnwl0x3&redirect_uri=https%3A%2F%2FDJGilmore4U.github.io%2Fauth%2Flinkedin&state=987654321&scope=r_basicprofile"
 }
@@ -17,7 +14,7 @@ var token = ''
 token = string.substring(start,end)
 
 if (token==='') {
-  document.location.href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86m8ebytnwl0x3&redirect_uri=https%3A%2F%2FDJGilmore4U.github.io%2Fauth%2Flinkedin&state=987654321&scope=r_basicprofile"
+  document.location.href="https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=86m8ebytnwl0x3&client_secret=FIqU8npvVzE6QIur"
  
  }
  $(document).on('click','#submit', function(){
