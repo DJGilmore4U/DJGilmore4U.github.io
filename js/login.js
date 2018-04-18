@@ -15,7 +15,7 @@ token = string.substring(start,end)
 
 if (token==='') {
   document.location.href="https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=86m8ebytnwl0x3&client_secret=FIqU8npvVzE6QIur"
- 
+ console.log(this);
  }
  $(document).on('click','#submit', function(){
     
