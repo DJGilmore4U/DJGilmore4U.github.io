@@ -1,0 +1,39 @@
+ _             _
+(  \          /  )
+ \  \        /  /
+  \  \      /  /
+   \ /;¯|¯`\  /
+   / |  |   (¯`\
+  |  |;¯|;¯.|\  \
+  \   ¯  ¯ ; /  /
+   \           /
+    \    __   /
+     |        |
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | ENGINEER
+
+D.J. TURNER
+Design & Web & Software Development
+
+github.com/djturner4u
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+React
+Styled components
+Three js
+Firebase
+
+_______________________________________________________________________________
+
+FONTS
+
+Gotham
+Hiragino Kaku Gothic
