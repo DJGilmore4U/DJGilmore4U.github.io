@@ -29,11 +29,21 @@ body {
   display: block;
  }
 
- #resume {
+ #resume1 {
   border: #000;
-  border-width: 3px;
-  border-radius: 30px;
+  border-width: 1px;
+  border-radius: 10px;
   border-style: solid;
+  float: left;
+  margin-left: 40px;
+ }
+ #resume2 {
+  border: #000;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  float: right;
+  margin-right: 40px;
  }
 
  #google_translate_element {
