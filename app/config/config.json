@@ -1,0 +1,45 @@
+{
+ 
+ "development": {
+
+     "username": "ff2gsiuqt3egdh9h",
+
+     "password": "g2y70uasgeafj5ak",
+
+     "database": "qi5itjhjjgi7m6fg",
+
+     "host": "s3lkt7lynu0uthj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+
+     "dialect": "mysql"
+
+ },
+
+ "test": {
+
+     "username": "root",
+
+     "password": "root",
+
+     "database": "sequelize_passport",
+
+     "host": "s3lkt7lynu0uthj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+
+     "dialect": "mysql"
+
+ },
+
+ "production": {
+
+     "username": "ff2gsiuqt3egdh9h",
+
+    "password": "g2y70uasgeafj5ak",
+
+    "database": "qi5itjhjjgi7m6fg",
+
+    "host": "s3lkt7lynu0uthj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+
+    "dialect": "mysql"
+
+ }
+
+}
