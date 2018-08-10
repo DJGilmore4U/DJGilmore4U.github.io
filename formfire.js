@@ -8,55 +8,51 @@ var config = {
     messagingSenderId: "143827307576"
 };
 firebase.initializeApp(config);
-
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
-document.getElementById('formName').addEventListener('submit', submitForm);
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e){
-    e.preventDefault();
+  e.preventDefault();
 
-    // Get values
-    // Remember to add all the values in your contact form here
-    var name = getInputVal('name');
-    var company = getInputVal('company');
-    var email = getInputVal('email');
-    var phone = getInputVal('phone');
-    var message = getInputVal('message');
+  // Get values
+  var name = getInputVal('name');
+  var company = getInputVal('company');
+  var email = getInputVal('email');
+  var phone = getInputVal('phone');
+  var message = getInputVal('message');
 
-    // Save message
-    // Remember to add all variable declared above here
-    saveMessage(name, company, email, phone, message);
+  // Save message
+  saveMessage(name, company, email, phone, message);
 
-    // Show alert
-    document.querySelector('.alert').style.display = 'block';
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
 
-    // Hide alert after 3 seconds
-    //Remember to add some CSS to that
-    setTimeout(function(){
-        document.querySelector('.alert').style.display = 'none';
-    },3000);
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
 
-    // Clear form - delete form data after submit
-    document.getElementById('contactForm').reset();
+  // Clear form
+  document.getElementById('contactForm').reset();
 }
 
-// Function to get form values
+// Function to get get form values
 function getInputVal(id){
-    return document.getElementById(id).value;
+  return document.getElementById(id).value;
 }
 
-// Save message to firebase function
+// Save message to firebase
 function saveMessage(name, company, email, phone, message){
-    var newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        name: name,
-        company:company,
-        email:email,
-        phone:phone,
-        message:message
-    });
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    company:company,
+    email:email,
+    phone:phone,
+    message:message
+  });
 }
